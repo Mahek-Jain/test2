@@ -21,7 +21,7 @@ Responsible for displaying individual nodes. \
 Handles click interactions to expand or collapse a particular node and pass down the relevant data to children.
 
 `Modal.jsx`: \
-Component to display content in a modal dialog box (popup).
+Component to display the clicked tree item in a modal dialog box (popup).
 
 `Accordion.js`: \
 The Accordion component that handles expanding/collapsing categories.
