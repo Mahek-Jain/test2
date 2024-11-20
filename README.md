@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# Assessment - All Parts (1 to 5)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains all parts of the assignment showing the final UI. 
 
-## Available Scripts
+## Getting Started
 
-In the project directory, you can run:
+### Project Structure
 
-### `npm start`
+`src/components/`:
+This directory contains reusable UI components.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+`Accordion.js`: \
+The Accordion component that handles expanding/collapsing categories.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+`TreeMenu.js`: \
+The TreeMenu component which contains the logic for expanding and collapsing nodes at the top-level.
 
-### `npm test`
+`TreeMenuNode.js`: \
+A reusable component used for individual nodes within the tree structure. \
+Manages nested nodes and propagates the correct open state for each child.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`TreeNode.js`: \
+Responsible for displaying individual nodes. \
+Handles click interactions to expand or collapse a particular node and pass down the relevant data to children.
 
-### `npm run build`
+`src/index.css/`: \
+Contains all of the styles needed for the application. \
+Styles for the tree navigation, accordion cards, modal, dark mode, and other UI elements are defined here. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`src/App.js`: \
+The main application component that brings together all the other components. \
+Contains the menu data. \
+Handles state for the entire app, including user interactions like dark mode, modals, etc. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+`src/index.js`: \
+The entry point of the application, which renders the App component. \
+Includes important global imports like React, ReactDOM, and any global styles. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+`src/logo.png`: \
+`logo.png` is used for branding in the header.
 
-### `npm run eject`
+### Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Clone the repository: \
+`git clone https://github.com/Mahek-Jain/test1.git` 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Navigate to the project directory: \
+`cd test1` 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Install dependencies: \
+`npm install`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Running the App
 
-## Learn More
+Start the development server: \
+`npm start` 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The app will be available at http://localhost:3000.
