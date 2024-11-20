@@ -6,7 +6,7 @@ This repository contains all parts of the assignment showing the final UI.
 
 ### Project Structure
 
-`src/components/`:
+`src/components/`: \
 This directory contains reusable UI components.
 
 `Accordion.js`: \
