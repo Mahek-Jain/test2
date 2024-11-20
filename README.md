@@ -9,9 +9,6 @@ This repository contains all parts of the assignment showing the final UI.
 `src/components/`: \
 This directory contains reusable UI components.
 
-`Accordion.js`: \
-The Accordion component that handles expanding/collapsing categories.
-
 `TreeMenu.js`: \
 The TreeMenu component which contains the logic for expanding and collapsing nodes at the top-level.
 
@@ -22,6 +19,12 @@ Manages nested nodes and propagates the correct open state for each child.
 `TreeNode.js`: \
 Responsible for displaying individual nodes. \
 Handles click interactions to expand or collapse a particular node and pass down the relevant data to children.
+
+`Modal.jsx`: \
+Component to display content in a modal dialog box (popup).
+
+`Accordion.js`: \
+The Accordion component that handles expanding/collapsing categories.
 
 `src/index.css`: \
 Contains all of the styles needed for the application. \
